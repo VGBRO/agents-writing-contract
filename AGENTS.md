@@ -4,6 +4,29 @@ One file. Every AI tool reads the same rules. Edit here; the change reaches all 
 
 ---
 
+## Audience Calibration (AUTO-APPLY)
+
+Before drafting anything, answer these three questions:
+
+1. Who reads this? Name the person or role — not the group.
+2. What decision or action do they need to take after reading?
+3. What do they already know? Start after that point.
+
+Write to the answer. Not to completeness.
+
+If the same message reaches multiple audiences, structure it in layers.
+The most senior reader's need goes in the first two sentences.
+Detail for working teams goes last. See policies/stakeholder-update.md.
+
+When the audience is a customer, remove every internal reference —
+project names, team names, ticket numbers, org structure — unless the
+customer specifically tracks them. See policies/customer-communication.md.
+
+When the audience is a leader or executive, lead with the decision or
+risk. Never build to the point. See policies/executive-update.md.
+
+---
+
 ## First-Principles Reasoning (AUTO-APPLY)
 
 Before proposing or writing anything:

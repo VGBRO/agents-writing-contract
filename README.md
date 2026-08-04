@@ -35,12 +35,13 @@ chmod +x setup.sh
 
 | Block | What it does |
 |-------|-------------|
+| Audience Calibration | Name who reads this and what they need before writing a word |
 | First-Principles Reasoning | Forces outcome-first thinking before any draft |
 | Writing for Humans | Defines what "clear" and "human" actually mean |
 | Two-Sentence Opening | Required opener for any doc longer than three paragraphs |
 | Simplified Technical English | Word-level rules: active voice, one term per concept, 20-word sentences |
-| Length Limits by Surface | Ceilings for Slack, PRs, work items, design docs |
 | Scannable Output | Lead with the answer, bold one key item, surface blockers explicitly |
+| Length Limits by Surface | Ceilings per communication surface |
 | Preserve Facts During Editing | Stops edits from softening or sharpening status and certainty |
 | Rule Lifecycle | When to add, tweak, or remove a rule |
 | Change the Narrowest Rule | Which file to edit depending on scope |
@@ -52,9 +53,9 @@ Surface-specific rules live in `policies/` and are routed from `AGENTS.md` when 
 
 | File | Coverage |
 |------|---------|
-| `policies/slack.md` | Slack post and thread limits |
-| `policies/pull-request.md` | PR description structure |
-| `policies/design-doc.md` | Design docs and incident reviews |
+| `policies/executive-update.md` | Leadership briefings — decision first, risk surfaced, no preamble |
+| `policies/customer-communication.md` | External messages — outcome framing, no internal jargon, one ask |
+| `policies/stakeholder-update.md` | Cross-functional updates layered for leaders, peers, and teams |
 
 ## Adding a rule
 
