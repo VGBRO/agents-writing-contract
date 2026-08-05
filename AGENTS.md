@@ -16,16 +16,14 @@ Write to the answer. Not to completeness.
 
 If the same message reaches multiple audiences, structure it in layers.
 The most senior reader's need goes in the first two sentences.
-Detail for working teams goes last.
-@~/.agents/policies/stakeholder-update.md
+Detail for working teams goes last. See policies/stakeholder-update.md.
 
 When the audience is a customer, remove every internal reference —
 project names, team names, ticket numbers, org structure — unless the
-customer specifically tracks them.
-@~/.agents/policies/customer-communication.md
+customer specifically tracks them. See policies/customer-communication.md.
 
 When the audience is a leader or executive, lead with the decision or
-risk. Never build to the point.
+risk. Never build to the point. See policies/executive-update.md.
 @~/.agents/policies/executive-update.md
 
 ---

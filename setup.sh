@@ -39,6 +39,7 @@ for policy in "$SCRIPT_DIR/policies/"*.md; do
     echo "    Installed: $dest"
   fi
 done
+shopt -u nullglob
 
 # Claude Code — import via CLAUDE.md
 CLAUDE_MD="$HOME/.claude/CLAUDE.md"
