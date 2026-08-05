@@ -17,6 +17,7 @@ SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 
 echo "==> Creating ~/.agents/"
 mkdir -p "$AGENTS_DIR"
+mkdir -p "$AGENTS_DIR/policies"
 
 # Install AGENTS.md
 if [ -e "$AGENTS_FILE" ]; then
@@ -26,6 +27,17 @@ else
   cp "$SCRIPT_DIR/AGENTS.md" "$AGENTS_FILE"
   echo "    Installed: $AGENTS_FILE"
 fi
+
+# Install policy files
+for policy in "$SCRIPT_DIR/policies/"*.md; do
+  dest="$AGENTS_DIR/policies/$(basename "$policy")"
+  if [ -e "$dest" ]; then
+    echo "    $dest already exists — skipping copy"
+  else
+    cp "$policy" "$dest"
+    echo "    Installed: $dest"
+  fi
+done
 
 # Claude Code — import via CLAUDE.md
 CLAUDE_MD="$HOME/.claude/CLAUDE.md"
