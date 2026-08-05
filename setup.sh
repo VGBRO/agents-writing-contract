@@ -29,6 +29,7 @@ else
 fi
 
 # Install policy files
+shopt -s nullglob
 for policy in "$SCRIPT_DIR/policies/"*.md; do
   dest="$AGENTS_DIR/policies/$(basename "$policy")"
   if [ -e "$dest" ]; then
